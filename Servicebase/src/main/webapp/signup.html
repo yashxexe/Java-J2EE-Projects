@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+.divParent{
+ display: flex;
+  justify-content: center;
+background-image: url("https://images.unsplash.com/photo-1551503766-ac63dfa6401c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+
+height: 750px;
+}
+.divChild{
+
+position:relative;
+top:150px;
+height:380px;
+text-align:center;
+
+border-radius: 10px;
+display: block;
+margin-left:auto;
+margin-right: auto;
+width: 27%;
+color: white;
+background: linear-gradient(to bottom, #00bfff, #0055ff);
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+	padding: 5px;
+	border-radius:8px;
+	margin: 4px;
+}
+button {
+	padding: 5px;
+	border-radius: 8px;
+	position: relative;
+	left: 40px;
+}
+#head{
+position: relative;
+top:-30px;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(127,240,233,0.9445028011204482) 35%, rgba(0,212,255,1) 100%);
+border-radius: 10px;
+}
+#link{
+position: relative;
+top:25px;
+left: 20px;
+
+  
+  background: -webkit-linear-gradient(#eee, #1E90FF);
+          -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+</style>
+</head>
+<body>
+<div class="divParent">
+<div class="divChild">
+<form action="signup" method="post"  >
+<h1 id="head">SIGNUP</h1>
+<table>
+<tr>
+<td>
+<label>Name:-</label>
+</td>
+<td>
+ <input type="text" name="name" placeholder="Enter your name" required="required">
+</td>
+</tr>
+<tr>
+<td>
+<label>Mobile:-</label></td> <td><input type="number" name="mobile" placeholder="Enter your number" required="required">
+
+</td>
+</tr>
+<tr>
+<td>
+<label>Email:-</label></td> <td><input type="email" name="email" placeholder="Enter your email" required="required">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Password:-</label> </td> <td><input type="password" name="password" placeholder="Enter your password" required="required">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Role:-</label>
+</td>
+<td><input type="radio" name="role" value="admin">ADMIN  <input type="radio" name="role" value="customer">Customer</td>
+</tr>
+
+
+</table><br>
+
+<button >SignUp</button>
+<button type="reset" >Cancel</button>
+<a href="login.html"><button type="button">Back</button></a>
+
+
+
+<h3 id="link"><a href="login.html">have an Account..?click here to login</a></h3>
+</form>
+
+</div>
+</div>
+</body>
+</html>
